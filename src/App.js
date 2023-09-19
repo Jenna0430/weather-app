@@ -5,8 +5,10 @@ const App = () => {
   return (
     <>
      <h1>Weather App</h1>
-     <h2>hello</h2>
     <WeatherSearch/> 
+    <p>
+    <a href='https://github.com/Jenna0430/weather-app' rel="noreferrer" target='_blank'>open source code:</a> <em>Jenna</em>
+    </p>
     </>
   )
 }
