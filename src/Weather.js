@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./weather.css"
 import axios from "axios"
-import WeatherInfo from "./weatherInfo"
+import WeatherInfo from "./WeatherInfo"
 
 
 const Weather = (props) => {

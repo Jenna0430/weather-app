@@ -10,8 +10,8 @@ const App = () => {
 
 
       <footer>
-      <p>
-      <a href='https://github.com/Jenna0430/weather-app' rel="noreferrer" target='_blank'>open source code:</a> <em>Jenna</em>
+      <p>Coded by Jenna Agbor, {" "}
+      <a href='https://github.com/Jenna0430/weather-app' rel="noreferrer" target='_blank'>open source code</a> on github.
       </p>
       </footer>
       

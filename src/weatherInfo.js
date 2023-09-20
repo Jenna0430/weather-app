@@ -1,10 +1,13 @@
 import React from 'react'
 import FormatDate from "./FormatDate"
+import WeatherTemperature from "./WeatherTemperature"
 
-const weatherInfo = (props) => {
+
+const WeatherInfo = (props) => {
   return (
     <div className='weatherInfo'>
       <h1>{props.info.city}</h1>
+     
        <ul>
         <li>
           <FormatDate date = {props.info.date}/>
@@ -15,11 +18,15 @@ const weatherInfo = (props) => {
        <div className='row mt-3'>
           <div className='col-6'>
             <div className='clearfix'>
+              <div className='row'>
+              <div className='col-3'>
             <img src={props.info.iconurl} alt={props.info.description} className='float-left'/>
-  
-             <span className='temperature'>{Math.round(props.info.temperature)}</span>
-             <span className='unit'>°C</span>
             </div>
+            <div className='col-9'>
+            <WeatherTemperature celcius={props.info.temperature} />
+            </div>
+            </div>
+             </div>
           </div>
   
           <div className='col-6'>
@@ -34,4 +41,4 @@ const weatherInfo = (props) => {
   )
 }
 
-export default weatherInfo
+export default WeatherInfo
