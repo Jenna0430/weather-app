@@ -36,7 +36,6 @@ const WeatherInfo = (props) => {
               </ul>
           </div>
        </div>
-
     </div>
   )
 }
