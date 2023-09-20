@@ -58,6 +58,7 @@ const Weather = (props) => {
       </div>
     );
   } else {  
+    
     search();
   return "loading...";
 }
