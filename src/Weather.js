@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./weather.css"
 import axios from "axios"
-import WeatherInfo from "./WeatherInfo"
+import WeatherInfo from "./WeatherInfos"
 
 
 const Weather = (props) => {
@@ -58,7 +58,7 @@ const Weather = (props) => {
       </div>
     );
   } else {  
-    
+
     search();
   return "loading...";
 }

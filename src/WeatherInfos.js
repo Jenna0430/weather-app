@@ -3,7 +3,7 @@ import FormatDate from "./FormatDate"
 import WeatherTemperature from "./WeatherTemperature"
 
 
-const WeatherInfo = (props) => {
+const WeatherInfos = (props) => {
   return (
     <div className='weatherInfo'>
       <h1>{props.info.city}</h1>
@@ -40,4 +40,4 @@ const WeatherInfo = (props) => {
   )
 }
 
-export default WeatherInfo
+export default WeatherInfos
