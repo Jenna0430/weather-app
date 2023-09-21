@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./weather.css"
 import axios from "axios"
 import WeatherInfo from "./WeatherInfos"
+import WeatherForecast from "./WeatherForecast"
 
 
 const Weather = (props) => {
@@ -15,8 +16,10 @@ const Weather = (props) => {
       humidity: response.data.main.humidity,
       city: response.data.name,
       description: response.data.weather[0].description,
-      iconurl:`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
+      // iconurl:`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       date: new Date(response.data.dt * 1000),
+      coordinates: response.data.coord,
     });  
       setReady(true);
   }
@@ -54,6 +57,8 @@ const Weather = (props) => {
         </form>
 
         <WeatherInfo info = {weatherData}/>
+
+        <WeatherForecast data = {weatherData.coordinates}/>
   
       </div>
     );

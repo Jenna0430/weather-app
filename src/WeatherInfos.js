@@ -1,6 +1,7 @@
 import React from 'react'
 import FormatDate from "./FormatDate"
 import WeatherTemperature from "./WeatherTemperature"
+import WeatherIcon from "./WeatherIcon";
 
 
 const WeatherInfos = (props) => {
@@ -19,8 +20,8 @@ const WeatherInfos = (props) => {
           <div className='col-6'>
             <div className='clearfix'>
               <div className='row'>
-              <div className='col-3'>
-            <img src={props.info.iconurl} alt={props.info.description} className='float-left'/>
+              <div className='col-3 float-left'>
+              <WeatherIcon code={props.info.icon} size={60} />
             </div>
             <div className='col-9'>
             <WeatherTemperature celcius={props.info.temperature} />
